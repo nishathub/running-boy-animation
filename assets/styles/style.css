@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/sky.jpg');
+    background-position:center;
+    background-size:cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.fence{
+    height: 250px;
+    width: 500%;
+    background-image: url('../images/street-fence.png');
+    position: absolute;
+    bottom:200px ;
+    animation: city 5s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.road{
+    height: 200px;
+    width: 500%;
+    background-image: url('../images/road.jpg');
+    position: absolute;
+    bottom:0;
+    animation: road 5s linear infinite;
+}
+@keyframes road{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.boy img{
+    position: absolute;
+    left: 12%;
+    bottom: 50px;
+    z-index: 1;
+
+}
